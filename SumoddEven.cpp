@@ -19,3 +19,4 @@ int main (){
     cout<<"Sum of odd:"<<sum<<endl;
     return 0;
 }
+//nothing just fun
