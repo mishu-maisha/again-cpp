@@ -34,7 +34,7 @@ int main() {
         arr[i] = arr[i - 1];
     }
 
-    arr[m-1 ] = x; // Insert the element at position m-1 (adjusting for 1-based indexing)
+    arr[m ] = x; 
 
     cout << "Array after insertion:" << endl;
     for (int i = 0; i <= n; i++) {
