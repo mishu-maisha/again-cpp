@@ -43,6 +43,6 @@ int main() {
     cout << endl;
 
     delete[] arr; // Free the allocated memory
-    //Always remember to delete[] arr; when you no longer need the dynamically allocated array to prevent memory leaks.
+    //Always remember to delete[] arr when you no longer need the dynamically allocated array to prevent memory leaks.
     return 0;
 }
