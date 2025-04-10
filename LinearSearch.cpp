@@ -6,14 +6,14 @@ int main(){
     int target=90,i;
 
     for(int i=0;i<6;i++){
-        if(x[i]==target){
-            cout<<i<<endl;
-        return i;
-      } 
+        if(x[i]==target){      
+        cout<<i<<endl;
+      }
+      
         
     }
     return -1;
-    cout<<i<<endl;
+    
     
     
    
