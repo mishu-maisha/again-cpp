@@ -19,7 +19,7 @@ int main() {
     cout << "Enter the position of insertion (1 to " << n + 1 << "): ";
     cin >> m;
 
-    if (m < 1 || m > n + 1) {
+    if (m < 0 || m > n + 1) {
         cout << "Invalid insertion position." << endl;
         delete[] arr; // Free the allocated memory
         return 1;

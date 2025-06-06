@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void MergeArr(vector<int>& num1, int m,vector<int>& num2,int n){
+void MergeArr(vector<int>&num1, int m,vector<int>& num2,int n){
 
    num1.resize(m+n);
      for(int i=0;i<n;i++){
