@@ -34,7 +34,7 @@ int main (){
   v.insert(v.begin()+2, 100) ;
 
   //for copying v in v1
-  v.clear();
+  //v.clear();
   vector<int>v1(v);
   for(int val: v1){
     cout<<val<<" ";
