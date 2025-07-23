@@ -2,7 +2,37 @@
 using namespace std;
 
 void merge(int a[], int lb,int mid, int ub){
-    int n1=mid-lb+1;
+    //easy merging
+    int i=lb;
+    int j=mid+1;
+    int k=lb;
+    int b[ub+1];//main array size is ub+1, so do copy array
+
+    //loop for merging
+    while(i<=mid && j<=ub ){
+
+    if(a[i]<a[j])//compare 2 subarray
+    {
+     b[k++]=a[i++];
+    }
+    else{
+        b[k++]=a[j++];
+    }
+} 
+   //if there's left any element in j subarray
+   while(j<=ub){
+     b[k++]=a[j++];
+   }
+
+        while(i<=mid){//left element in i subarray
+            b[k++]=a[i++];
+        }
+        
+    for(int l=lb;l<=ub;l++){
+        a[l]=b[l];
+    }
+
+    /*int n1=mid-lb+1;
     int n2=ub-mid;
 
     int l[n1], r[n2];
@@ -23,7 +53,7 @@ void merge(int a[], int lb,int mid, int ub){
         }
     }
     while(i<n1) a[k++]=l[i++];
-    while(j<n2) a[k++]=r[j++];
+    while(j<n2) a[k++]=r[j++];*/
 }
 
 
