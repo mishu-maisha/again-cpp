@@ -6,7 +6,7 @@ struct Node {
 };
 
 int main() {
-    Node* head=nullptr ;
+    Node* head = nullptr;
     head = new Node(); // Allocate memory for the node
 
     head->data = 45;
