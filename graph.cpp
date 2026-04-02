@@ -9,7 +9,7 @@ class Graph{
     public:
     //constructor
     Graph(int v){
-        this->v=v;
+        this->v=v;//this is a pointer that says set my obj's v equal to parameter's v
         l=new list<int>[v];// just like arr=new int[v];
     }
 
